@@ -1,6 +1,7 @@
 package runners;
 
 import org.junit.runner.RunWith;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -9,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"html:target/cucumber", "json:target/report.json"},
 		features = "src/test/resources/features",
 		glue = "steps",
-		tags = "@uniqueID",
-		dryRun = false
+		tags = "@test",
+		dryRun = true
 		)
 
 public class CukesRunner {

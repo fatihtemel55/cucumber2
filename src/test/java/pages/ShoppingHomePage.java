@@ -27,7 +27,33 @@ public class ShoppingHomePage {
 	
 	@FindBy(xpath = "//div[@id ='center_column']//h1/span[1]")
 	public WebElement headerText;
+	
+	@FindBy(linkText = "Sign in")
+	public WebElement signInBtn;
+	
+	@FindBy(id = "email_create")
+	public WebElement emailField;
+	
+	@FindBy(id = "SubmitCreate")
+	public WebElement createAccountBtn;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
