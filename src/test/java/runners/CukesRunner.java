@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"html:target/cucumber", "json:target/report.json"},
 		features = "src/test/resources/features",
 		glue = "steps",
-		tags = "@test",
-		dryRun = true
+		tags = "@pojo_type",
+		dryRun = false
 		)
 
 public class CukesRunner {

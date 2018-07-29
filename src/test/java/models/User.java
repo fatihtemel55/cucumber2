@@ -5,6 +5,30 @@ public class User {
 	private String title;
 	private String firstName;
 	private String lastName;
+	private String phoneNumber;
+	
+	
+	public User(String title, String firstName, String lastName, String phoneNum) {
+		this.title = title;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNum;
+	}
+	
+	
+	
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+
+
 	public String getTitle() {
 		return title;
 	}

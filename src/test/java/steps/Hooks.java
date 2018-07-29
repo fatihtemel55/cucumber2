@@ -13,7 +13,7 @@ public class Hooks {
 	@Before
 	public void setUp() {
 		System.out.println("This is Hooks Before annotation");
-		System.out.println(System.currentTimeMillis());
+//		System.out.println(System.currentTimeMillis());
 	}
 	
 	@After

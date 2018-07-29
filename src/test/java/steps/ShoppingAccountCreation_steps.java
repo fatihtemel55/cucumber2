@@ -10,8 +10,10 @@ import org.openqa.selenium.support.ui.Select;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import models.FacebookPost;
+import models.User;
 import pages.ShoppingAccountCreationPage;
 import pages.ShoppingHomePage;
+import utilities.Config;
 
 public class ShoppingAccountCreation_steps {
 	
@@ -44,6 +46,8 @@ public class ShoppingAccountCreation_steps {
 
 	@Then("user completes first name {string}")
 	public void user_completes_first_name(String firstNameTxt) {
+		System.out.println("initial name: " + firstNameTxt);
+		firstNameTxt = Config.getValue("name");
 	    sacp.firstName.sendKeys(firstNameTxt);
 	}
 
@@ -115,11 +119,7 @@ public class ShoppingAccountCreation_steps {
 	    sacp.mobileNumber.sendKeys(userInfo.get("mNumber"));
 	}
 	
-	@When("user sends info:")
-	public void user_sends_info(List<FacebookPost> posts) {
-		System.out.println("Post size: " + posts.size());
-		System.out.println(posts.get(0).getComments());
-	}
+	
 }
 
 

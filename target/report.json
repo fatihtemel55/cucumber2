@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 652943,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Testing the model class, custom data type",
+        "description": "",
+        "id": "model-class-test;testing-the-model-class--custom-data-type;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 27832380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 550872,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user logs in to application",
+            "match": {
+              "location": "ModelClassTest_steps.user_logs_in_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31267734,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user creates account for user info:",
+            "match": {
+              "location": "ModelClassTest_steps.user_creates_account_for_user_info(User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "first name",
+                  "last name",
+                  "phone number"
+                ]
+              },
+              {
+                "cells": [
+                  "Mr",
+                  "John",
+                  "Doe",
+                  "123123123"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 329900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies stuff",
+            "match": {
+              "location": "ModelClassTest_steps.user_verifies_stuff()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pojo_type"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 164294,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Testing the model class, custom data type",
+        "description": "",
+        "id": "model-class-test;testing-the-model-class--custom-data-type;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 22533,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 320639,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user logs in to application",
+            "match": {
+              "location": "ModelClassTest_steps.user_logs_in_to_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 484920,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user creates account for user info:",
+            "match": {
+              "location": "ModelClassTest_steps.user_creates_account_for_user_info(User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "first name",
+                  "last name",
+                  "phone number"
+                ]
+              },
+              {
+                "cells": [
+                  "Mrs",
+                  "Emily",
+                  "Smith",
+                  "95494838392"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285644,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies stuff",
+            "match": {
+              "location": "ModelClassTest_steps.user_verifies_stuff()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@pojo_type"
+          }
+        ]
+      }
+    ],
+    "name": "Model class test",
+    "description": "",
+    "id": "model-class-test",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/modelClassTest.feature",
+    "tags": []
+  }
+]
