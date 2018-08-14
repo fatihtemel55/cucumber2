@@ -7,7 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"html:target/cucumber", "json:target/report.json"},
+		plugin = {"pretty",
+		        "html:target/cucumber-report",
+		        "json:target/cucumber.json"
+},
 		features = "src/test/resources/features",
 		glue = "steps",
 		tags = "@priceOrder",
